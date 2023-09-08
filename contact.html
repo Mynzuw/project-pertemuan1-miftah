@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halaman Kontak</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial;
+    }
+    header {
+      background-color: dimgrey;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+    }
+    nav{
+      float: left;
+      width: 30%;
+      height: 600px;
+      color: white;
+      font-size: 20px
+      padding: 0px;
+      background-color: dimgrey;
+    }
+    nav ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 8px 16px;
+    }
+    nav ul li a.active{
+      background-color: black;
+      color: white;
+    }
+    nav ul li a:hover:not(.active){
+      background-color: darkslategrey;
+      color: white;
+    }
+    article{
+      float: left;
+      width: 70%;
+      padding: 20px;
+      
+    }
+    article a {
+      text-decoration: none;
+      color: black;
+    }
+
+    section::after {
+      clear: both;
+      display: table;
+      content:"";
+    }
+    footer {
+      background-color:dimgrey;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+    /*
+    p::first-letter{
+      font-size: xx-large
+    }
+    /*
+    responsive layout
+    */
+    @media (max-width: 300px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+  </head>
+  <body>
+   <header>
+    <h1>Website Portofolio</h1>
+   </header>
+   <section>
+     <nav>
+       <ul>
+        <li><a class="" href="index.html">Home</a></li>
+        <li><a class="" href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+       </ul>
+      </nav>
+     <article>
+       <h1>Contact</h1>
+       <p>Informasi Kontak:</p>
+       <p>
+        Email :  <a href="mailto:miftahadha.ma@gmail.com">miftahadha.ma@gmail.com</a> <br>
+        LinkedIn : <a href="https://www.linkedin.com/in/miftah-adha-05258b243">Miftah Adha</a> <br> 
+        GitHub : <a href="https://github.com/Mynzuw">Mynzuw</a>  <br>
+        Nomor Telepon : 
+        <a href="tel:+628129381655">+6289560415509</a> <br>
+        Youtube : <a href="https://www.youtube.com/c/ChazMizer">AdhaM</a>
+       </p>
+       <p>Jangan ragu untuk menghubungi saya melalui email atau melalui pesan LinkedIn. Saya senang berbicara dengan profesional dan rekan mahasiswa yang memiliki minat serupa dalam dunia teknologi. Saya juga aktif di GitHub, jadi Anda dapat melihat proyek-proyek yang saya kerjakan dan berkontribusi jika tertarik.
+        <br> <br>
+        Terima kasih atas perhatiannya, dan saya berharap dapat berkolaborasi dengan Anda dalam masa depan!
+       </p>
+     </article>
+   </section>
+   <footer>
+     &copy; Copyright 2023
+   </footer>
+  </body>
+</html>
